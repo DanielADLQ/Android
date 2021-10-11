@@ -114,6 +114,19 @@
             android:layout_height="wrap_content"
             android:text="Botoncillo" />
 
+        <FrameLayout
+            android:layout_width="195dp"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Button" />
+
+        </FrameLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
