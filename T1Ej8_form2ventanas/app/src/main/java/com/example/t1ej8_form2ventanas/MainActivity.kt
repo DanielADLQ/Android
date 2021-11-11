@@ -105,6 +105,8 @@ class MainActivity : AppCompatActivity() {
             var intentActual = intent
             finish()
             startActivity(intentActual)
+            //Esto borra la lista y todo
+
         }
 
         botonCuantas.setOnClickListener(){

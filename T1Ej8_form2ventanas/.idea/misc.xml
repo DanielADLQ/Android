@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/RepositorioAndroid/Android/T1Ej8_form2ventanas/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/RepositorioAndroid/Android/T1Ej8_form2ventanas/app/src/main/res/layout/activity_ventana2.xml" value="0.25416666666666665" />
+        <entry key="..\:/RepositorioAndroid/Android/T1Ej8_form2ventanas/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/RepositorioAndroid/Android/T1Ej8_form2ventanas/app/src/main/res/layout/activity_ventana2.xml" value="0.2" />
+        <entry key="..\:/RepositorioAndroid/Android/T1Ej8_form2ventanas/app/src/main/res/layout/listado_personas.xml" value="0.2" />
       </map>
     </option>
   </component>

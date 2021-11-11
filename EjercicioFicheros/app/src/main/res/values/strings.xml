@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EjercicioFicheros</string>
+    <string name="btnEditar">EDITAR</string>
+    <string name="btnEliminar">ELIMINAR</string>
+    <string name="btnGuardar">GUARDAR</string>
+    <string name="btnVaciar">VACIAR</string>
+    <string name="btnVolver">VOLVER</string>
+    <string name="FichSel">Fichero seleccionado:</string>
+    <string name="nuevoFich">Nombre del nuevo fichero:</string>
+    <string name="crearFich">CREAR FICHEROS</string>
+
+</resources>
