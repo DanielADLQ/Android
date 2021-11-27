@@ -1,0 +1,25 @@
+{
+  "users":[
+    {
+      "name":"David",
+      "email":"david@gmail.com",
+      "contact":{
+        "mobile":"555 123457"
+      }
+    },
+    {
+      "name":"Mario",
+      "email":"mario@gmail.com",
+      "contact":{
+        "mobile":"555 325484"
+      }
+    },
+    {
+      "name":"Elena",
+      "email":"elena@gmail.com",
+      "contact":{
+        "mobile":"555 114689"
+      }
+    }
+  ]
+}

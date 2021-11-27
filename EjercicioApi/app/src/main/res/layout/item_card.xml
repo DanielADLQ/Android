@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--items for a single row of RecyclerView-->
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtTipo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e9999999999"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txtTipo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e9999999999"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imgPoke"
+            android:layout_width="85dp"
+            android:layout_height="84dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

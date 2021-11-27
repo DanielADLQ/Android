@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DesafioMiColorNote</string>
+    <string name="btnAbrir">Open</string>
+    <string name="imgNuevo">New</string>
+    <string name="rboNota">Note</string>
+    <string name="rboLista">List</string>
+    <string name="hintTitulo">Title...</string>
+    <string name="btnCrear">Create</string>
+    <string name="tstMod">Text changed</string>
+    <string name="tstLim">Text cleaned</string>
+    <string name="hintNuevaTarea">New task...</string>
+    <string name="errNoTitulo">Error. Write a title</string>
+    <string name="txtEnviarSMS">Send SMS</string>
+    <string name="txtNomCont">Name:</string>
+    <string name="txtNumCont">Number:</string>
+    <string name="btnEnviarSMS">Send SMS</string>
+    <string name="btnVolver">Return</string>
+    <string name="errNoTipo">Error. Select a type</string>
+    <string name="txtEliminar">Delete</string>
+    <string name="txtCancelar">Cancel</string>
+    <string name="txtConfBorrado">Confirm delete</string>
+    <string name="txtDeseaElim">Do you wish to delete?</string>
+    <string name="txtCamposVacios">You must fill all boxes</string>
+    <string name="txtNumIncorrecto">Incorrect number...</string>
+    <string name="txtSMSEnviado">Message sent...</string>
+    <string name="txtNoPermiso">You do not have permission...</string>
+    <string name="txtNoPuedeEnviar">You can not send SMS...</string>
+    <string name="hintVacio">Write something...</string>
+</resources>

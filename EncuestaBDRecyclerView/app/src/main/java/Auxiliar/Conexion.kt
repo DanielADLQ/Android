@@ -14,6 +14,7 @@ object Conexion {
 
 
     fun cambiarBD(nombreBD:String){
+        Parametro.nombreBD=nombreBD
         this.nombreBD = nombreBD
     }
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DesafioMiColorNote</string>
+    <string name="btnAbrir">Ouvrir</string>
+    <string name="imgNuevo">Nouveau</string>
+    <string name="rboNota">Remarque</string>
+    <string name="rboLista">Prêt</string>
+    <string name="hintTitulo">Titre...</string>
+    <string name="btnCrear">Crée</string>
+    <string name="tstMod">Texte modifié</string>
+    <string name="tstLim">Texte nettoyé</string>
+    <string name="hintNuevaTarea">Nuoveax táche...</string>
+    <string name="errNoTitulo">Erreur. Écrire un titre</string>
+    <string name="txtEnviarSMS">Envoyer un SMS</string>
+    <string name="txtNomCont">Nom:</string>
+    <string name="txtNumCont">Numéro:</string>
+    <string name="btnEnviarSMS">Envoyer un SMS</string>
+    <string name="btnVolver">Revenir</string>
+    <string name="errNoTipo">Erreur. Marque un type</string>
+    <string name="txtEliminar">Supprimer</string>
+    <string name="txtCancelar">Annuler</string>
+    <string name="txtConfBorrado">Confirmer la suppression?</string>
+    <string name="txtDeseaElim">Tu veux supprimer ça?</string>
+    <string name="txtCamposVacios">Vous debez remplir tous les champs</string>
+    <string name="txtNumIncorrecto">Mauvais numéro...</string>
+    <string name="txtSMSEnviado">Message envoyé...</string>
+    <string name="txtNoPermiso">Tu nas pas la permission</string>
+    <string name="txtNoPuedeEnviar">Tu ne puex pas envoyer de SMS</string>
+    <string name="hintVacio">Écris quelque chose...</string>
+</resources>

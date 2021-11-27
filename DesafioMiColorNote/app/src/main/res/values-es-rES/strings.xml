@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DesafioMiColorNote</string>
+    <string name="btnAbrir">Abrir</string>
+    <string name="imgNuevo">Nuevo</string>
+    <string name="rboNota">Nota</string>
+    <string name="rboLista">Lista</string>
+    <string name="hintTitulo">Titulo...</string>
+    <string name="btnCrear">Crear</string>
+    <string name="tstMod">Texto modificado</string>
+    <string name="tstLim">Texto limpiado</string>
+    <string name="hintNuevaTarea">Nueva tarea...</string>
+    <string name="errNoTitulo">Error. Escribe un titulo</string>
+    <string name="txtEnviarSMS">Enviar SMS</string>
+    <string name="txtNomCont">Nombre:</string>
+    <string name="txtNumCont">Numero:</string>
+    <string name="btnEnviarSMS">Enviar SMS</string>
+    <string name="btnVolver">Volver</string>
+    <string name="errNoTipo">Error. Marca un tipo</string>
+    <string name="txtEliminar">Eliminar</string>
+    <string name="txtCancelar">Cancelar</string>
+    <string name="txtConfBorrado">Confirmar borrado</string>
+    <string name="txtDeseaElim">¿Desea eliminar?</string>
+    <string name="txtCamposVacios">Los campos no pueden estar vacios</string>
+    <string name="txtNumIncorrecto">El número no es correcto...</string>
+    <string name="txtSMSEnviado">Mensaje enviado...</string>
+    <string name="txtNoPermiso">No tienes los permisos requeridos...</string>
+    <string name="txtNoPuedeEnviar">Lo sentimos, tu dispositivo probablemente no pueda enviar SMS...</string>
+    <string name="hintVacio">Escribe algo...</string>
+</resources>

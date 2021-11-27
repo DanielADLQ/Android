@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocielo2"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lsvNotas"
+        android:layout_width="325dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <Button
+        android:id="@+id/btnAbrir"
+        style="@style/misBotones"
+        android:layout_width="162dp"
+        android:layout_height="65dp"
+        android:enabled="false"
+        android:onClick="abrirNota"
+        android:text="@string/btnAbrir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="48dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        app:srcCompat="@drawable/lupa" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="48dp"
+        android:layout_height="59dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        app:srcCompat="@drawable/lupa" />
+
+    <ImageView
+        android:id="@+id/imgNuevo"
+        android:layout_width="156dp"
+        android:layout_height="123dp"
+        android:onClick="mostrarCrear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/burbuja" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textoNube"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:text="@string/imgNuevo"
+        app:layout_constraintBottom_toBottomOf="@+id/imgNuevo"
+        app:layout_constraintEnd_toEndOf="@+id/imgNuevo"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="@+id/imgNuevo"
+        app:layout_constraintTop_toTopOf="@+id/imgNuevo"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/hintTitulo"
+        android:inputType="textPersonName"
+        android:onClick="crearNota"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        style="@style/misBotones"
+        android:layout_width="156dp"
+        android:layout_height="44dp"
+        android:onClick="crearNota"
+        android:text="@string/btnCrear"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupo"
+        android:layout_width="153dp"
+        android:layout_height="72dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+
+        <RadioButton
+            android:id="@+id/rboNota"
+            style="@style/radioBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rboNota" />
+
+        <RadioButton
+            android:id="@+id/rboLista"
+            style="@style/radioBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rboLista"
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
