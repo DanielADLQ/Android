@@ -35,14 +35,6 @@ class MiAdaptadorVH: ArrayAdapter<Nota> {
         return this.valores?.get(position)
     }
 
-    /**
-     * Este método se carga para cada elemento de la lista. Tanta llamada a findviewbyid hace que se pueda
-     * ralentizar y que caiga el rendimiento.
-     */
-    /**
-     * Este método se carga para cada elemento de la lista. Tanta llamada a findviewbyid hace que se pueda
-     * ralentizar y que caiga el rendimiento.
-     */
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         var view: View? = convertView

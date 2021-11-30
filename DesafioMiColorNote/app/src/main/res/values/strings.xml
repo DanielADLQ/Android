@@ -26,4 +26,7 @@
     <string name="txtNoPermiso">You do not have permission...</string>
     <string name="txtNoPuedeEnviar">You can not send SMS...</string>
     <string name="hintVacio">Write something...</string>
+    <string name="confEnviarSMS">Confirm sending</string>
+    <string name="deseaEnviar">Do you wish to send the SMS?</string>
+    <string name="enviar">Send</string>
 </resources>

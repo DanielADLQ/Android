@@ -26,5 +26,6 @@
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_weight="1"
+        android:onClick="tomarFoto"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 </LinearLayout>

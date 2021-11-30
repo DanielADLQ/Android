@@ -40,11 +40,6 @@ class Notas : AppCompatActivity() {
 
     fun guardarTexto(view:View){
 
-        //var elegido:String=intent.getStringExtra("seleccion") as String
-        //var listadoNotas:ArrayList<Nota> = ConexionBD.obtenerNotas(this)
-        //var numElegido:Int=elegido.toInt()
-        //var idNota = listadoNotas.get(numElegido).idN
-
         var idNota:Int=intent.getIntExtra("idNota",0)
 
         var contenido:TextView = findViewById(R.id.txtContenidoNota)

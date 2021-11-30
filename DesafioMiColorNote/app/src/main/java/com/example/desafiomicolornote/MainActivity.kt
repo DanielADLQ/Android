@@ -113,7 +113,6 @@ class MainActivity : AppCompatActivity() {
         var rboNota:RadioButton=findViewById(R.id.rboNota)
         var rboLista:RadioButton=findViewById(R.id.rboLista)
         var titulo:TextView=findViewById(R.id.txtTitulo)
-        //var btnCrear:Button=findViewById(R.id.btnCrear)
 
         if(!rboNota.isChecked && !rboLista.isChecked){
             Toast.makeText(this,R.string.errNoTipo, Toast.LENGTH_LONG).show()
@@ -136,20 +135,18 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 var datoFecha:String = Calendar.getInstance().time.date.toString()+"/"+((Calendar.getInstance().time.month)+1).toString()+"/"+((Calendar.getInstance().time.year)+1900).toString()
-                //Log.e("DANIEL",datoFecha)
+
                 var datoHora:String = Calendar.getInstance().time.hours.toString()+":"+Calendar.getInstance().time.minutes.toString()
-                //Log.e("DANIEL",datoHora)
+
 
                 val admin = AdminSQLIteConexion(this, ConexionBD.nombreBD, null, 1)
                 val bd = admin.writableDatabase
 
-                //Toast.makeText(this,datoFecha, Toast.LENGTH_LONG).show()
 
                 ConexionBD.addNota(this,
                     Nota(0,datoTitulo,datoTipo,datoFecha,datoHora,"")
                 )
 
-                //Toast.makeText(this,"Creado con éxito", Toast.LENGTH_LONG).show()
 
                 titulo.text=""
                 radioGrupo.check(-1)
@@ -165,7 +162,6 @@ class MainActivity : AppCompatActivity() {
 
 
     fun abrirNota(view:View){
-
 
         var intentV1:Intent
 

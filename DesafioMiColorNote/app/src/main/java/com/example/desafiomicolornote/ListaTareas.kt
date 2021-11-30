@@ -39,6 +39,12 @@ class ListaTareas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_tareas)
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setContentView(R.layout.activity_lista_tareas)
+
 
         if (ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED)
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), cameraRequest)
@@ -76,8 +82,6 @@ class ListaTareas : AppCompatActivity() {
             val admin = AdminSQLIteConexion(this, ConexionBD.nombreBD, null, 1)
             val bd = admin.writableDatabase
 
-            //var misTareasNota:ArrayList<Tarea> = ConexionBD.obtenerTareas(this,selecc)
-
             ConexionBD.addTarea(
                 this,
                 Tarea(0, idNotaSelec, contenidoTarea.text.trim().toString(), 0, "")
@@ -97,55 +101,29 @@ class ListaTareas : AppCompatActivity() {
     }
 
 
-    //Parte nueva inicio
-    /*fun tomarFoto(view: View){
-        val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        startActivityForResult(cameraIntent, cameraRequest)
-
-
-        /*var intentFoto = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        var foto = File(getExternalFilesDir(null), txtTitTarea.text.toString())
-        intentFoto.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto))
-        startActivity(intentFoto)*/
-
-    }*/
-
-    /*var idNotaSelec:Int=intent.getIntExtra("idNota",0)
-    var miAdapter = MiAdaptadorRecycler(ConexionBD.obtenerTareas(this, idNotaSelec), this,this){
-    override fun
-        onItemClick(int position){
-            //Aquí defines el comportamiento cuando haces click (defines el cambio de imagen)
-            idImgHead.setBackground = items.get(position);
-        }
-    }*/
-
-    //https://es.stackoverflow.com/questions/33561/c%C3%B3mo-guardar-un-imageview-en-android
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         try {
-            if (requestCode == cameraRequest) {
-                val photo: Bitmap = data?.extras?.get("data") as Bitmap
-                //imgFotoTarea.setImageBitmap(photo)
 
-                //var fotoFichero = File(getExternalFilesDir(null), edNombre.text.toString())
-                //var uri = Uri.fromFile(fotoFichero)
-                //var fileOutStream = FileOutputStream(fotoFichero)
-                //photo.compress(Bitmap.CompressFormat.PNG, 100, fileOutStream);
-                //fileOutStream.flush();
-                //fileOutStream.close();
+            if(resultCode != 0){ // 0 si se cancela la foto
+                ConexionBD.modFoto(this,MiAdaptadorRecycler.tareaSel)
+                if (requestCode == cameraRequest) {
+                    val photo: Bitmap = data?.extras?.get("data") as Bitmap
+
+
+                    var fotoFichero = File(getFilesDir().getPath(),MiAdaptadorRecycler.tareaSel.toString()+".jpg")
+
+                    var fileOutStream = FileOutputStream(fotoFichero)
+                    photo.compress(Bitmap.CompressFormat.PNG, 100, fileOutStream);
+                    fileOutStream.flush()
+                    fileOutStream.close()
+                }
+
             }
         }catch(e: Exception){
             Log.e("Fernando",e.toString())
         }
     }
-
-    /*fun recuperarFoto(view: View){
-        var bitmap1 = BitmapFactory.decodeFile(getExternalFilesDir(null).toString() + "/"+edNombre.text.toString());
-        imagen.setImageBitmap(bitmap1);
-    }//Parte nueva fin*/
-
-
-
 
 
     fun volver(view:View){

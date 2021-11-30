@@ -30,14 +30,6 @@ object ConexionBD {
         registro.put("hora", n.hora)
         registro.put("texto",n.texto)
 
-        /*if(n.tipo == "nota"){
-            registro.put("texto","")
-        }
-
-        if(n.tipo == "lista"){
-            registro.put("texto","")
-        }*/
-
         bd.insert("Notas", null, registro)
 
 
@@ -52,50 +44,6 @@ object ConexionBD {
         bd.close()
         return cant //0 si no consigue borrar, 1 si si lo consigue
     }
-
-    /*fun modPersona(contexto:AppCompatActivity, dni:String, p:Persona):Int {
-        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
-        val bd = admin.writableDatabase
-        val registro = ContentValues()
-        registro.put("nombre", p.nombre)
-        registro.put("edad", p.edad)
-        val cant = bd.update("personas", registro, "dni='${dni}'", null)
-        bd.close()
-        return cant
-    }
-
-
-    fun buscarPersona(contexto: AppCompatActivity, dni:String):Persona? {
-        var p:Persona? = null
-        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
-        val bd = admin.writableDatabase
-        val fila = bd.rawQuery(
-            "select nombre,edad from personas where dni='${dni}'",
-            null
-        )
-        if (fila.moveToFirst()) {
-            p = Persona(dni, fila.getString(0), fila.getInt(1))
-        }
-        bd.close()
-        return p
-    }*/
-
-    /*fun cambiarSO(contexto: AppCompatActivity, id:Int, soNuevo:String):Int{
-        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
-        val bd = admin.writableDatabase
-
-        /*val fila = bd.rawQuery("update Encuestas set so='${soNuevo}' where idEnc='${id}'", null)
-        fila.moveToNext()*/
-
-        val registro = ContentValues()
-
-        registro.put("so",soNuevo)
-
-        val cant = bd.update("Encuestas",registro,"idEnc='${id}'",null)
-
-        bd.close()
-        return cant
-    }*/
 
     fun cambiarTexto(contexto: AppCompatActivity, id:Int, textoNuevo:String):Int{
         val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
@@ -194,71 +142,15 @@ object ConexionBD {
         return cant
     }
 
-    fun modFoto(contexto:AppCompatActivity, t:Tarea):Int {
+    fun modFoto(contexto:AppCompatActivity, tId:Int):Int {
         val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
         val bd = admin.writableDatabase
         val registro = ContentValues()
-        registro.put("foto", t.foto)
-        val cant = bd.update("Tareas", registro, "idT='${t.idT}'", null)
+        registro.put("foto", tId)
+        val cant = bd.update("Tareas", registro, "idT='${tId}'", null)
 
         bd.close()
         return cant
     }
-
-
-
-fun seleccionarIDEnc(db: SQLiteDatabase):Int{
-
-//Numero de registros
-val fila = db.rawQuery("select count(idEnc) from Encuestas", null)
-var numRegistros:Int=0
-
-while(fila.moveToNext()){
-    numRegistros=fila.getInt(0)
-}
-
-//OBTENER ID PARA EL REGISTRO NUEVO
-var id:Int = 0
-var idMax:Int = 0
-
-if(numRegistros==0){
-    id = 1
-}else{
-
-    val filaMax = db.rawQuery("select max(idEnc) from Encuestas group by idEnc", null)
-
-    while(filaMax.moveToNext()){
-        idMax = filaMax.getInt(0)
-    }
-    id = idMax + 1
-}
-return id
-
-}
-
-fun seleccionarIDEspEnc(db: SQLiteDatabase):Int{
-
-val fila = db.rawQuery("select count(idEspEleg) from EspElegida", null)
-var numRegistros:Int=0
-
-while(fila.moveToNext()){
-    numRegistros=fila.getInt(0)
-}
-var id:Int = 0
-var idMax:Int = 0
-if(numRegistros==0){
-    id = 1
-}else{
-
-    val filaMax = db.rawQuery("select max(idEspEleg) from EspElegida group by idEspEleg", null)
-
-    while(filaMax.moveToNext()){
-        idMax = filaMax.getInt(0)
-    }
-    id = idMax + 1
-
-}
-return id
-}
 
 }

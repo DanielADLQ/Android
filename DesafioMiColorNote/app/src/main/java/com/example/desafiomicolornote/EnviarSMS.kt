@@ -89,7 +89,7 @@ class EnviarSMS : AppCompatActivity() {
                         txtNomCont.text = listaContactos!!.get(seleccionado).nombre
 
                     }
-                    //txtNumTelefono.text=ContactsContract.CommonDataKinds.Phone.NUMBER
+
                 }
 
             }
@@ -139,7 +139,6 @@ class EnviarSMS : AppCompatActivity() {
                         //Sacamos todos los números de ese contacto.
                         while (pCur!!.moveToNext()) {
                             val phoneNo = pCur!!.getString(pCur!!.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER).toInt())
-                            //Esto son los números asociados a ese contacto. Ahora mismo no hacemos nada con ellos.
 
                         }
                         pCur!!.close()
@@ -162,7 +161,7 @@ class EnviarSMS : AppCompatActivity() {
                 while(cur!=null && cur.moveToNext()){
                     var id = cur.getString(cur.getColumnIndex(ContactsContract.Contacts._ID).toInt())
                     var nombre = cur.getString(cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME).toInt())
-                    //listaNombre!!.add(nombre)
+
                     if (cur.getInt(cur.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER).toInt()) > 0) {
                         val pCur = cr.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,null,ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ?", arrayOf(id), null)
                         //Sacamos todos los números de ese contacto.
@@ -188,19 +187,39 @@ class EnviarSMS : AppCompatActivity() {
 
 
     fun enviar(view: View){
-        val pm = this.packageManager
-        //Esta es una comprobación previa para ver si mi dispositivo puede enviar sms o no.
-        if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY) && !pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_CDMA)) {
-            Toast.makeText(this,"Lo sentimos, tu dispositivo probablemente no pueda enviar SMS...",Toast.LENGTH_SHORT).show()
-        }
-        else {
-            val permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
-            if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
-                miMensaje()
-            } else {
-                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS), permissionRequest)
-            }
-        }
+
+        val dialogo: AlertDialog.Builder = AlertDialog.Builder(this)
+        dialogo.setPositiveButton(R.string.enviar,
+            DialogInterface.OnClickListener { dialog, which ->
+
+                val pm = this.packageManager
+                //Esta es una comprobación previa para ver si mi dispositivo puede enviar sms o no.
+                if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY) && !pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_CDMA)) {
+                    Toast.makeText(this,"Lo sentimos, tu dispositivo probablemente no pueda enviar SMS...",Toast.LENGTH_SHORT).show()
+                }
+                else {
+                    val permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
+                    if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
+                        miMensaje()
+                    } else {
+                        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS), permissionRequest)
+                    }
+                }
+
+            })
+        dialogo.setNegativeButton(
+            R.string.txtCancelar,
+            DialogInterface.OnClickListener { dialog, which ->
+
+                dialog.dismiss()
+            })
+        dialogo.setTitle(R.string.confEnviarSMS)
+        dialogo.setMessage(R.string.deseaEnviar)
+        dialogo.show()
+
+
+        true
+
     }
 
     private fun miMensaje() {
