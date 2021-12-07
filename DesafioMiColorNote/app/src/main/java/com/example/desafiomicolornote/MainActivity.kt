@@ -50,10 +50,10 @@ class MainActivity : AppCompatActivity() {
 
                 if(pos==seleccionado){
                     seleccionado=-1
-                    botonAbrir.isEnabled=false
+                    //botonAbrir.isEnabled=false
                 }else{
                     seleccionado=pos
-                    botonAbrir.isEnabled=true
+                    //botonAbrir.isEnabled=true
                 }
 
                 adaptador = MiAdaptadorVH(ventanaActual,R.layout.lista_notas, ConexionBD.obtenerNotas(ventanaActual),seleccionado)
@@ -165,7 +165,7 @@ class MainActivity : AppCompatActivity() {
 
         var intentV1:Intent
 
-        if(seleccionado >= 0){
+        if(seleccionado != -1){
 
             var misNotas:ArrayList<Nota> = ConexionBD.obtenerNotas(this)
 
@@ -181,6 +181,8 @@ class MainActivity : AppCompatActivity() {
             intentV1.putExtra("idNota",idNotaSelec)
             startActivity(intentV1)
 
+        }else{
+            Toast.makeText(this,R.string.errNoSelec, Toast.LENGTH_LONG).show()
         }
 
     }

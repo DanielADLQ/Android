@@ -29,4 +29,5 @@
     <string name="confEnviarSMS">Confirm sending</string>
     <string name="deseaEnviar">Do you wish to send the SMS?</string>
     <string name="enviar">Send</string>
+    <string name="errNoSelec">Error. Select a note</string>
 </resources>

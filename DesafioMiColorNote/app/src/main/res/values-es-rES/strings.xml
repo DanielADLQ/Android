@@ -30,4 +30,5 @@
     <string name="confEnviarSMS">Enviar SMS</string>
     <string name="deseaEnviar">¿Desea enviar el SMS?</string>
     <string name="enviar">Enviar</string>
+    <string name="errNoSelec">Error. Selecciona una nota</string>
 </resources>
