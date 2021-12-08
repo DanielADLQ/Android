@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio2Profesores"
-
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".EdicionProfesor"
+            android:exported="true" />
         <activity
             android:name=".ListadoProfesores"
             android:exported="true" />

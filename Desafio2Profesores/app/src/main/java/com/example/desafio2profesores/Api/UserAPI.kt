@@ -12,6 +12,20 @@ import retrofit2.http.*
 interface UserAPI {
 
     @GET("profesores")
-    fun getUsuarioss(): Call<MutableList<Profesor>>
+    fun getProfesores(): Call<MutableList<Profesor>>
+
+    @GET("profesores/{codigo}")
+    fun getUnProfesor(@Path("codigo") codigo:String): Call<Profesor>
+
+    @DELETE("profesores/borrar/{codigo}")
+    fun borrarProfesor(@Path("codigo") codigo:String) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @POST("profesores/registrar")
+    fun addProfesor(@Body info: Profesor) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @PUT("profesores/modificar")
+    fun modProfesor(@Body info: Profesor) : Call<ResponseBody>
 
 }

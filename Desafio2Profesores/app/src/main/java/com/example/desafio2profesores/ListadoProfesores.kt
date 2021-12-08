@@ -34,16 +34,16 @@ class ListadoProfesores : AppCompatActivity() {
             //getUsers()
             getUsers2()
         }
-        /*if(operacion.equals("buscar")){
+        if(operacion.equals("buscar")){
             val idBuscar = intent.getStringExtra("valorBuscar").toString()
             //getBuscarUnUsuario(idBuscar)
             getBuscarUnUsuario2(idBuscar)
-        }*/
+        }
     }
 
     fun getUsers2() {
         val request = ServiceBuilder.buildService(UserAPI::class.java)
-        val call = request.getUsuarioss()
+        val call = request.getProfesores()
 
         call.enqueue(object : Callback<MutableList<Profesor>> {
             override fun onResponse(call: Call<MutableList<Profesor>>, response: Response<MutableList<Profesor>>) {
@@ -60,6 +60,34 @@ class ListadoProfesores : AppCompatActivity() {
                 }
             }
             override fun onFailure(call: Call<MutableList<Profesor>>, t: Throwable) {
+                Toast.makeText(this@ListadoProfesores, "${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
+    fun getBuscarUnUsuario2(idBusc:String){
+        val request = ServiceBuilder.buildService(UserAPI::class.java)
+        val call = request.getUnProfesor(idBusc);
+
+        call.enqueue(object : Callback<Profesor> {
+            override fun onResponse(call: Call<Profesor>, response: Response<Profesor>) {
+                val post = response.body()
+                if (post != null) {
+                    profesores.add(post)
+                }
+                if (response.isSuccessful){
+                    recyclerView.apply {
+                        setHasFixedSize(true)
+                        layoutManager = LinearLayoutManager(this@ListadoProfesores)
+                        adapter = MiAdaptadorRV(this@ListadoProfesores, profesores)
+                    }
+                }
+                else {
+                    Toast.makeText(this@ListadoProfesores, "No se han encontrado resultados", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<Profesor>, t: Throwable) {
                 Toast.makeText(this@ListadoProfesores, "${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
