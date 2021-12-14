@@ -7,6 +7,7 @@
         <domain includeSubdomains="true">192.168.212.23</domain>
         <domain includeSubdomains="true">192.168.43.61</domain>
         <domain includeSubdomains="true">192.168.209.115</domain>
+        <domain includeSubdomains="true">192.168.209.100</domain>
 
     </domain-config>
 </network-security-config>

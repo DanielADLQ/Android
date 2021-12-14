@@ -4,10 +4,10 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class Ordenador(@SerializedName("codord")
-                    val codigo: String? = null,
+                    val codord: String? = null,
 
                     @SerializedName("cpu")
-                    val nya: String? = null,
+                    val cpu: String? = null,
 
                     @SerializedName("ram")
                     val ram: String? = null,
@@ -16,5 +16,5 @@ data class Ordenador(@SerializedName("codord")
                      val almacenamiento: String? = null,
 
                     @SerializedName("aula")
-                    val clave: String? = null) : Serializable {
+                    val aula: String? = null) : Serializable {
 }

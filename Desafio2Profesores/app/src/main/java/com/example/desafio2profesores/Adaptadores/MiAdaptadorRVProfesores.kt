@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.desafio2profesores.Modelo.Profesor
 import com.example.desafio2profesores.R
 
-class MiAdaptadorRV (private var context: Context,
-                     private var profesores : ArrayList<Profesor>
+class MiAdaptadorRVProfesores (private var context: Context,
+                               private var profesores : ArrayList<Profesor>
 ) :
-    RecyclerView.Adapter<MiAdaptadorRV.MyViewHolder>() {
+    RecyclerView.Adapter<MiAdaptadorRVProfesores.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.profesor_card, parent, false)
         return MyViewHolder(v)

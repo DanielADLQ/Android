@@ -28,4 +28,40 @@ interface UserAPI {
     @PUT("profesores/modificar")
     fun modProfesor(@Body info: Profesor) : Call<ResponseBody>
 
+
+    @GET("aulas")
+    fun getAulas(): Call<MutableList<Aula>>
+
+    @GET("aulas/{codaula}")
+    fun getUnAula(@Path("codaula") codigo:String): Call<Aula>
+
+    @DELETE("aulas/borrar/{codaula}")
+    fun borrarAula(@Path("codaula") codaula:String) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @POST("aulas/registrar")
+    fun addAula(@Body info: Aula) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @PUT("aulas/modificar")
+    fun modAula(@Body info: Aula) : Call<ResponseBody>
+
+
+    @GET("ordenadores")
+    fun getOrdenadores(): Call<MutableList<Ordenador>>
+
+    @GET("ordenadores/{codord}")
+    fun getUnOrdenador(@Path("codord") codigo:String): Call<Ordenador>
+
+    @DELETE("ordenadores/borrar/{codord}")
+    fun borrarOrdenador(@Path("codord") codord:String) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @POST("ordenadores/registrar")
+    fun addOrdenador(@Body info: Ordenador) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @PUT("ordenadores/modificar")
+    fun modOrdenador(@Body info: Ordenador) : Call<ResponseBody>
+
 }

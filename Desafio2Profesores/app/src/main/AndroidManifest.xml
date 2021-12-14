@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Desafio2Profesores"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EdicionOrdenador"
+            android:exported="true" />
+        <activity
+            android:name=".ListadoOrdenadores"
+            android:exported="true" />
+        <activity
+            android:name=".EdicionAula"
+            android:exported="true" />
+        <activity
+            android:name=".ListadoAulas"
+            android:exported="true" />
+        <activity
             android:name=".EdicionProfesor"
             android:exported="true" />
         <activity
