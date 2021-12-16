@@ -13,4 +13,20 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="btnProf" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:backgroundTint">@color/verde</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="btnAula" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:backgroundTint">@color/naranja</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="btnOrd" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:backgroundTint">@color/azul</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
 </resources>

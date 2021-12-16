@@ -14,11 +14,10 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class VentanaJefe : AppCompatActivity() {
+class VentanaProfe : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ventana_jefe)
-
+        setContentView(R.layout.activity_ventana_profe)
     }
 
     //PROFESORES--------------------------------------------------------------------
@@ -31,7 +30,7 @@ class VentanaJefe : AppCompatActivity() {
 
     fun buscarPorCodProf(view: View){
 
-        var txtCodProf:TextView = findViewById(R.id.txtCodProfBuscar)
+        var txtCodProf: TextView = findViewById(R.id.txtCodProfBuscar)
 
         var intentV1 = Intent(this, ListadoProfesores::class.java)
 
@@ -45,9 +44,9 @@ class VentanaJefe : AppCompatActivity() {
         }
     }
 
-    fun borrarPorCodProf(view:View){
+    fun borrarPorCodProf(view: View){
 
-        var txtCodProf:TextView = findViewById(R.id.txtCodProfBuscar)
+        var txtCodProf: TextView = findViewById(R.id.txtCodProfBuscar)
 
         val request = ServiceBuilder.buildService(UserAPI::class.java)
         val call = request.borrarProfesor(txtCodProf.text.toString())
@@ -58,33 +57,34 @@ class VentanaJefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@VentanaJefe, "Algo ha fallado en el borrado: codigo no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@VentanaProfe, "Algo ha fallado en el borrado: codigo no encontrado",
+                        Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@VentanaJefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@VentanaProfe, "Algo ha fallado en la conexión.", Toast.LENGTH_LONG).show()
             }
         })
     }
 
-    fun nuevoProfesor(view:View){
+    fun nuevoProfesor(view: View){
         var intentV1 = Intent(this, EdicionProfesor::class.java)
         intentV1.putExtra("operacion","nuevo")
         startActivity(intentV1)
     }
 
-    fun modificarProfesor(view:View){
+    fun modificarProfesor(view: View){
 
-        var txtCodProf:TextView = findViewById(R.id.txtCodProfBuscar)
+        var txtCodProf: TextView = findViewById(R.id.txtCodProfBuscar)
 
         var intentV1 = Intent(this, EdicionProfesor::class.java)
         intentV1.putExtra("operacion","modificar")
@@ -102,7 +102,7 @@ class VentanaJefe : AppCompatActivity() {
 
     fun buscarPorCodAula(view: View){
 
-        var txtCodAula:TextView = findViewById(R.id.txtCodAulaBuscar)
+        var txtCodAula: TextView = findViewById(R.id.txtCodAulaBuscar)
 
         var intentV1 = Intent(this, ListadoAulas::class.java)
 
@@ -116,9 +116,9 @@ class VentanaJefe : AppCompatActivity() {
         }
     }
 
-    fun borrarPorCodAula(view:View){
+    fun borrarPorCodAula(view: View){
 
-        var txtCodAula:TextView = findViewById(R.id.txtCodAulaBuscar)
+        var txtCodAula: TextView = findViewById(R.id.txtCodAulaBuscar)
 
         val request = ServiceBuilder.buildService(UserAPI::class.java)
         val call = request.borrarAula(txtCodAula.text.toString())
@@ -129,33 +129,34 @@ class VentanaJefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@VentanaJefe, "Algo ha fallado en el borrado: codigo no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@VentanaProfe, "Algo ha fallado en el borrado: codigo no encontrado",
+                        Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@VentanaJefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@VentanaProfe, "Algo ha fallado en la conexión.", Toast.LENGTH_LONG).show()
             }
         })
     }
 
-    fun nuevoAula(view:View){
+    fun nuevoAula(view: View){
         var intentV1 = Intent(this, EdicionAula::class.java)
         intentV1.putExtra("operacion","nuevo")
         startActivity(intentV1)
     }
 
-    fun modificarAula(view:View){
+    fun modificarAula(view: View){
 
-        var txtCodAula:TextView = findViewById(R.id.txtCodAulaBuscar)
+        var txtCodAula: TextView = findViewById(R.id.txtCodAulaBuscar)
 
         var intentV1 = Intent(this, EdicionAula::class.java)
         intentV1.putExtra("operacion","modificar")
@@ -173,7 +174,7 @@ class VentanaJefe : AppCompatActivity() {
 
     fun buscarPorCodOrd(view: View){
 
-        var txtCodOrdenador:TextView = findViewById(R.id.txtCodOrdenadorBuscar)
+        var txtCodOrdenador: TextView = findViewById(R.id.txtCodOrdenadorBuscar)
 
         var intentV1 = Intent(this, ListadoOrdenadores::class.java)
 
@@ -187,9 +188,9 @@ class VentanaJefe : AppCompatActivity() {
         }
     }
 
-    fun borrarPorCodOrdenador(view:View){
+    fun borrarPorCodOrdenador(view: View){
 
-        var txtCodOrdenador:TextView = findViewById(R.id.txtCodOrdenadorBuscar)
+        var txtCodOrdenador: TextView = findViewById(R.id.txtCodOrdenadorBuscar)
 
         val request = ServiceBuilder.buildService(UserAPI::class.java)
         val call = request.borrarOrdenador(txtCodOrdenador.text.toString())
@@ -200,33 +201,34 @@ class VentanaJefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@VentanaJefe, "Algo ha fallado en el borrado: codigo no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@VentanaProfe, "Algo ha fallado en el borrado: codigo no encontrado",
+                        Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@VentanaJefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@VentanaProfe, "Registro eliminado con éxito", Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@VentanaJefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@VentanaProfe, "Algo ha fallado en la conexión.", Toast.LENGTH_LONG).show()
             }
         })
     }
 
-    fun nuevoOrdenador(view:View){
+    fun nuevoOrdenador(view: View){
         var intentV1 = Intent(this, EdicionOrdenador::class.java)
         intentV1.putExtra("operacion","nuevo")
         startActivity(intentV1)
     }
 
-    fun modificarOrdenador(view:View){
+    fun modificarOrdenador(view: View){
 
-        var txtCodOrdenador:TextView = findViewById(R.id.txtCodOrdenadorBuscar)
+        var txtCodOrdenador: TextView = findViewById(R.id.txtCodOrdenadorBuscar)
 
         var intentV1 = Intent(this, EdicionOrdenador::class.java)
         intentV1.putExtra("operacion","modificar")
