@@ -1,0 +1,115 @@
+package com.example.t1ej8encuesta
+
+import android.location.GnssAntennaInfo
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.*
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        var nombre:TextView = findViewById(R.id.txtNombre)
+        var esAnonimo:Switch = findViewById(R.id.swAnonimo)
+
+        var radioGrupo:RadioGroup = findViewById(R.id.radioGroup)
+        var radioMac:RadioButton = findViewById(R.id.rboMac)
+        var radioWindows:RadioButton = findViewById(R.id.rboWindows)
+        var radioLinux:RadioButton = findViewById(R.id.rboLinux)
+
+        var checkDam:CheckBox = findViewById(R.id.chkDAM)
+        var checkAsir:CheckBox = findViewById(R.id.chkASIR)
+        var checkDaw:CheckBox = findViewById(R.id.chkDAW)
+
+        var barraHoras:SeekBar = findViewById(R.id.skbHoras)
+        var textoHoras:TextView = findViewById(R.id.lblNumHoras)
+
+        var botonValidar:Button = findViewById(R.id.btnValidar)
+        var botonReiniciar:Button = findViewById(R.id.btnReiniciar)
+        var botonCuantas:Button = findViewById(R.id.btnCuantas)
+        var botonResumen:Button = findViewById(R.id.btnResumen)
+
+        var textoResumen:TextView = findViewById(R.id.txtResumen)
+
+        var listaEncuestados:ArrayList<Encuestado> = ArrayList<Encuestado>()
+
+        esAnonimo.setOnClickListener(){
+            if(esAnonimo.isChecked){
+                nombre.text=""
+                nombre.isEnabled=false
+            }else{
+                nombre.isEnabled=true
+            }
+        }
+
+        barraHoras.setOnSeekBarChangeListener(object:SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+                var s=seekBar.progress.toString()
+                textoHoras.setText(s)
+
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar) {}
+        })
+
+
+
+        botonValidar.setOnClickListener(){
+            if(!esAnonimo.isChecked && nombre.text.length==0){
+                Toast.makeText(this,"ERROR. Escribe un nombre o marca anónimo", Toast.LENGTH_LONG).show()
+            }else if(!radioMac.isChecked && !radioWindows.isChecked && !radioLinux.isChecked){ //Ninguno marcado
+                Toast.makeText(this,"ERROR. Marca un sistema operativo", Toast.LENGTH_LONG).show()
+            }else{
+
+                var datoNombre:String=""
+
+                if(esAnonimo.isChecked){
+                    datoNombre="Anónimo"
+                }else{
+                    datoNombre=nombre.text.toString()
+                }
+
+                var datoSO:String=""
+                var posicionSeleccionado = radioGrupo.indexOfChild(findViewById(radioGrupo.checkedRadioButtonId))
+                when(posicionSeleccionado){
+                    0 -> datoSO="Mac"
+                    1 -> datoSO="Windows"
+                    2 -> datoSO="Linux"
+                }
+
+
+                var esp:ArrayList<String> = ArrayList()
+                if(checkDam.isChecked){
+                    esp.add("DAM")
+                }
+                if(checkAsir.isChecked){
+                    esp.add("ASIR")
+                }
+                if(checkDaw.isChecked){
+                    esp.add("DAW")
+                }
+                if(esp.size==0){
+                    esp.add("Sin especialidad")
+                }
+
+                listaEncuestados.add(Encuestado(datoNombre,datoSO,esp,textoHoras.text.toString()))
+                Toast.makeText(this,"Añadido con éxito", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        botonCuantas.setOnClickListener(){
+            Toast.makeText(this,("Hay "+listaEncuestados.size.toString()+" encuestados"),Toast.LENGTH_LONG).show()
+        }
+
+        botonResumen.setOnClickListener(){
+            textoResumen.text=""
+            for(i in 0..listaEncuestados.size-1){
+                textoResumen.text = textoResumen.text.toString() + listaEncuestados[i].toString() + "\n"
+
+            }
+        }
+
+    }
+}

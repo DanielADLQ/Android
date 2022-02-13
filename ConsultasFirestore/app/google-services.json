@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "157513362078",
+    "project_id": "ejemploconsultas",
+    "storage_bucket": "ejemploconsultas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157513362078:android:ebbdf000c37b580ef9e98f",
+        "android_client_info": {
+          "package_name": "com.example.consultasfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157513362078-1aam3qd91dmr1kfc1ea30facerg6pph5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.consultasfirestore",
+            "certificate_hash": "68635ab64d5f8c3e9b7e8e0ea78b5c90f0d9261d"
+          }
+        },
+        {
+          "client_id": "157513362078-mtqmpk3o99vkqct3mmr5jra5i2ri7eco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBwLtQyuXjqeMXZIL5hkoaFmnyZuvJvrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157513362078-mtqmpk3o99vkqct3mmr5jra5i2ri7eco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

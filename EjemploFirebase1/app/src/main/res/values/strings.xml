@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejemplo inicial Firebase</string>
+    <string name="prefs_file">com.example.ejemplofirebase1.PREFERENCE_FILE_KEY</string>
+    <string name="request_id_token">335038089438-mnb23t4d3atltrv8b0fkf9kinqe0ole9.apps.googleusercontent.com</string>
+</resources>
