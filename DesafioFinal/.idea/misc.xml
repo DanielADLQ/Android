@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_crear_evento.xml" value="0.1" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_editar_eventos.xml" value="0.1" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_maps_crear_evento.xml" value="0.13125" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.16770833333333332" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_entrada_admin.xml" value="0.2" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_gestion_usuarios.xml" value="0.2" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_mod_asist.xml" value="0.128" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_no_activado.xml" value="0.13125" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_usuario.xml" value="0.13125" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recycler_gestion_usu.xml" value="0.24010416666666667" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclerasistentes.xml" value="0.1" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclereventos.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Desafio2Profesores</string>
+    <string name="listadoaula">CLASS LIST</string>
+    <string name="listadoord">COMPUTER LIST</string>
+    <string name="listadoprof">TEACHER LIST</string>
+    <string name="nuevoaula">NEW CLASS</string>
+    <string name="nuevooord">NEW COMPUTER</string>
+    <string name="nuevoprof">NEW TEACHER</string>
+    <string name="buscar">SEARCH</string>
+    <string name="editar">EDIT</string>
+    <string name="borrar">DELETE</string>
+    <string name="aceptar">ACCEPT</string>
+    <string name="cancelar">CANCEL</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="codigo">ID:</string>
+    <string name="nombre">NAME:</string>
+    <string name="clave">PASS:</string>
+    <string name="rol">ROLE:</string>
+    <string name="aula">CLASS:</string>
+    <string name="profesor">Teacher</string>
+    <string name="Jefedepartamento">Department head</string>
+    <string name="cpu">CPU:</string>
+    <string name="gestioncentros">Management of centers</string>
+    <string name="ram">RAM:</string>
+    <string name="espacio">STORAGE:</string>
+    <string name="profesores">TEACHERS</string>
+    <string name="aulas">CLASSES</string>
+    <string name="ordenadores">COMPUTERS</string>
+    <string name="visualizacion">Inventory display</string>
+    <string name="edaulas">CLASS EDITION</string>
+    <string name="edord">COMPUTER EDITION</string>
+    <string name="edprof">TEACHER EDITION</string>
+    <string name="pantallainicio">STARTING PAGE</string>
+    <string name="ramgb">RAM (GB)</string>
+    <string name="almgb">STORAGE (GB)</string>
+    <string name="volver">RETURN</string>
+
+</resources>

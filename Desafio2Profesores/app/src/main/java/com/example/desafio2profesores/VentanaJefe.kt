@@ -19,6 +19,15 @@ class VentanaJefe : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ventana_jefe)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
+    }
+
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmFragJefe, fragment)
+        fragmentTransaction.commit()
     }
 
     //PROFESORES--------------------------------------------------------------------

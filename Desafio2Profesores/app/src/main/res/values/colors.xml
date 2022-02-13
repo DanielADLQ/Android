@@ -11,4 +11,8 @@
     <color name="verde">#4CAF50</color>
     <color name="azul">#2196F3</color>
     <color name="naranja">#FF9800</color>
+    <color name="verdeflojo">#A5BCA5</color>
+    <color name="azulflojo">#A8C0D5</color>
+    <color name="naranjaflojo">#ECD2A9</color>
+    <color name="lila">#BDB0D5</color>
 </resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Desafio2Profesores</string>
+    <string name="listadoaula">LISTE DE CLASSE</string>
+    <string name="listadoord">LISTE DES EQUIPES</string>
+    <string name="listadoprof">LISTE DES ENSEIGNANTS</string>
+    <string name="nuevoaula">NOUVELLE CLASSE</string>
+    <string name="nuevooord">NOUVELLE EQUIPE</string>
+    <string name="nuevoprof">NOUVELLE ENSEIGNANT</string>
+    <string name="buscar">CHERCHER</string>
+    <string name="editar">EDITER</string>
+    <string name="borrar">EFFACER</string>
+    <string name="aceptar">ACCEPTER</string>
+    <string name="cancelar">ANNULER</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="codigo">CODE:</string>
+    <string name="nombre">NOM:</string>
+    <string name="clave">PASSE:</string>
+    <string name="rol">RÔLE:</string>
+    <string name="aula">CLASSE:</string>
+    <string name="profesor">Enseignant</string>
+    <string name="Jefedepartamento">Chef de département</string>
+    <string name="cpu">CPU:</string>
+    <string name="gestioncentros">Gestion des centres éducatifs</string>
+    <string name="ram">RAM:</string>
+    <string name="espacio">STOCKAGE:</string>
+    <string name="profesores">ENSEIGNANTS</string>
+    <string name="aulas">CLASSES</string>
+    <string name="ordenadores">ORDINATEURS</string>
+    <string name="visualizacion">Affichage inventaire</string>
+    <string name="edaulas">ÉDITION DES CLASSES</string>
+    <string name="edord">EDITION DES ORDINATEURS</string>
+    <string name="edprof">EDICION DES ENSEIGNANTS</string>
+    <string name="pantallainicio">PRÈMIERE PAGE</string>
+    <string name="ramgb">RAM (GB)</string>
+    <string name="almgb">STOCKAGE (GB)</string>
+    <string name="volver">REVENIR</string>
+
+</resources>

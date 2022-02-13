@@ -3,6 +3,7 @@ package com.example.desafio2profesores
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,6 +27,9 @@ class ListadoOrdenadores : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_ordenadores)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
         recyclerView = findViewById<RecyclerView>(R.id.RVListaOrdenadores)
         val linearLayoutManager = LinearLayoutManager(applicationContext)
         recyclerView.layoutManager = linearLayoutManager
@@ -41,6 +45,12 @@ class ListadoOrdenadores : AppCompatActivity() {
             //getBuscarUnUsuario(idBuscar)
             getBuscarUnUsuario2(idBuscar)
         }
+    }
+
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmlisord, fragment)
+        fragmentTransaction.commit()
     }
 
     fun getOrdenadores() {
@@ -94,4 +104,9 @@ class ListadoOrdenadores : AppCompatActivity() {
             }
         })
     }
+
+    fun volverOrd(view: View){
+        finish()
+    }
+
 }

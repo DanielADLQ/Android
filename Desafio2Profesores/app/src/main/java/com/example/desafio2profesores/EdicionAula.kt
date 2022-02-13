@@ -29,6 +29,9 @@ class EdicionAula : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edicion_aula)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
         nuevoCodaula = findViewById(R.id.edCodaulaNuevo)
         nuevoNomaula = findViewById(R.id.edNomaulaNuevo)
 
@@ -40,9 +43,14 @@ class EdicionAula : AppCompatActivity() {
             getBuscarUnAula(codBuscar)
             nuevoCodaula.isEnabled = false  //No dejamos modificar el codaula que es la clave del registro.
 
-
         }
 
+    }
+
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmedaula, fragment)
+        fragmentTransaction.commit()
     }
 
 

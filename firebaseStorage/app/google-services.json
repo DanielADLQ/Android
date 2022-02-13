@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "774298642187",
+    "project_id": "ejemplostorage-ee295",
+    "storage_bucket": "ejemplostorage-ee295.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774298642187:android:1505b5b5d35e4ae08a240e",
+        "android_client_info": {
+          "package_name": "com.example.firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774298642187-s5pad60gt7846ionbbs8i175ir446i73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasestorage",
+            "certificate_hash": "68635ab64d5f8c3e9b7e8e0ea78b5c90f0d9261d"
+          }
+        },
+        {
+          "client_id": "774298642187-fuosq0ufb48d544i2u89qdp8daua9qtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhbJ_N1Y8xgDi_LRsJp2MbivLLK87mX_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774298642187-fuosq0ufb48d544i2u89qdp8daua9qtv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

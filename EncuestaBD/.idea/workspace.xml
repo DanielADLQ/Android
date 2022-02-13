@@ -15,79 +15,206 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b71800e-4ff3-4789-99de-9562ac551fba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/androidTest/java/com/example/desafiomicolornote/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/Adaptadores/MiAdaptadorVH.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/Auxiliar/ConexionBD.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/Auxiliar/Parametro.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/Conexion/AdminSQLIteConexion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/Modelo/Nota.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/com/example/desafiomicolornote/ListaTareas.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/com/example/desafiomicolornote/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/java/com/example/desafiomicolornote/Notas.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/basura.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/burbuja.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/casa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/casaseta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/chinchetaroja.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/chinchetaverde.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/fondocorcho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/iconocasa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/imagenguardar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/lupa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/nevera1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/nevera1c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/nevera2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/nevera2c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/puertanevera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/sms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/drawable/smsfondonegro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/layout/activity_lista_tareas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/layout/activity_notas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/layout/lista_notas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/app/src/test/java/com/example/desafiomicolornote/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DesafioMiColorNote/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesafioMiColorNote/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioMiColorNote/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesafioMiColorNote/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioMiColorNote/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncuestaBDRecyclerView/app/src/main/java/Auxiliar/Conexion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../EncuestaBDRecyclerView/app/src/main/java/Auxiliar/Conexion.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncuestaBDRecyclerView/app/src/main/java/Auxiliar/Parametro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../EncuestaBDRecyclerView/app/src/main/java/Auxiliar/Parametro.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConsultasFirestore/app/src/main/java/com/example/consultasfirestore/ProviderType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConsultasFirestore/app/src/main/java/com/example/consultasfirestore/login.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConsultasFirestore/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/SHA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/androidTest/java/com/example/datosfirebase/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/java/com/example/datosfirebase/HomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/java/com/example/datosfirebase/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/java/com/example/datosfirebase/ProviderType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/app/src/test/java/com/example/datosfirebase/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatosFirebase/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/ic_launcher2-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/Fragmento.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/drawable/silla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_fragmento.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/item_spinner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-anydpi-v26/ic_launcher2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-anydpi-v26/ic_launcher2_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-hdpi/ic_launcher2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-hdpi/ic_launcher2_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-hdpi/ic_launcher2_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-mdpi/ic_launcher2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-mdpi/ic_launcher2_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-mdpi/ic_launcher2_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xhdpi/ic_launcher2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xhdpi/ic_launcher2_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xhdpi/ic_launcher2_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxhdpi/ic_launcher2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxhdpi/ic_launcher2_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxhdpi/ic_launcher2_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxxhdpi/ic_launcher2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxxhdpi/ic_launcher2_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/mipmap-xxxhdpi/ic_launcher2_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/ic_launcher2_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjemploAutenticacionFirebase/app/src/main/java/com/example/ejemploautenticacionfirebase/ProviderType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/androidTest/java/com/example/ejerciciofirebase/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/java/com/example/ejerciciofirebase/HomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/java/com/example/ejerciciofirebase/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/java/com/example/ejerciciofirebase/ProviderType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/app/src/test/java/com/example/ejerciciofirebase/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebase/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/androidTest/java/com/example/ejerciciofirebaseroles/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/java/com/example/ejerciciofirebaseroles/HomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/java/com/example/ejerciciofirebaseroles/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/java/com/example/ejerciciofirebaseroles/ProviderType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/app/src/test/java/com/example/ejerciciofirebaseroles/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicioFirebaseRoles/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/Adaptadores/MiAdaptadorRVProfesores.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/Adaptadores/MiAdaptadorRVProfesores.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/Api/ServiceBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/Api/ServiceBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/EdicionAula.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/EdicionAula.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/EdicionOrdenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/EdicionOrdenador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoAulas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoAulas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoOrdenadores.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoOrdenadores.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoProfesores.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/ListadoProfesores.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/VentanaJefe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/VentanaJefe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/VentanaProfe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/java/com/example/desafio2profesores/VentanaProfe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_aula.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_aula.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_ordenador.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_ordenador.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_profesor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_edicion_profesor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_aulas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_aulas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_ordenadores.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_ordenadores.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_profesores.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_listado_profesores.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_ventana_jefe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_ventana_jefe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_ventana_profe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/activity_ventana_profe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/ordenador_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/layout/ordenador_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desafio2Profesores/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\davlu\.android\avd\Nexus_5X_API_28.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[00cfd4bb0904]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

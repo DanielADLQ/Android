@@ -29,7 +29,7 @@
             android:id="@+id/lblRam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RAM (GB):"
+            android:text="@string/ramgb"
             android:textColor="#000"
             android:textSize="10sp" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/lblAlm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ALMACENAMIENTO (GB):"
+            android:text="@string/almgb"
             android:textColor="#000"
             android:textSize="10sp" />
 
@@ -61,7 +61,7 @@
             android:id="@+id/lblAula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aula:"
+            android:text="@string/aula"
             android:textColor="#000"
             android:textSize="10sp" />
 

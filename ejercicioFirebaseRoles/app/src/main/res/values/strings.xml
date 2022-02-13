@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ejercicioFirebaseRoles</string>
+    <string name="request_id_token">1094316517981-k367celvonf3160g2c1356g7uh7ninb1.apps.googleusercontent.com</string>
+    <string name="prefs_file">com.example.ejerciciofirebaseroles.PREFERENCE_FILE_KEY</string>
+</resources>

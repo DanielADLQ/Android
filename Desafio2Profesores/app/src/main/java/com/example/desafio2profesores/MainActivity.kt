@@ -24,6 +24,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
+    }
+
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmFragLogin, fragment)
+        fragmentTransaction.commit()
     }
 
     fun login(view: View){

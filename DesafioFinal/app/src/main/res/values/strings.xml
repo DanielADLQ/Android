@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DesafioFinal</string>
+    <string name="request_id_token">560994546874-jcb9ljr24uoagmigmvb712hj2dv3u201.apps.googleusercontent.com</string>
+    <string name="prefs_file">com.example.desafiofinal.PREFERENCE_FILE_KEY</string>
+    <string name="title_activity_maps_crear_evento">MapsCrearEvento</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

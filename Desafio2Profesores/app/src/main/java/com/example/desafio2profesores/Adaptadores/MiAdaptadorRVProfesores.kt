@@ -21,7 +21,12 @@ class MiAdaptadorRVProfesores (private var context: Context,
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.codigo.text = profesores[position].codigo
         holder.nya.text = profesores[position].nya
-        holder.rol.text = profesores[position].rol
+
+        if(profesores[position].rol == "0"){
+            holder.rol.text = "Profesor"
+        }else{
+            holder.rol.text = "Jefe de departamento"
+        }
 
         holder.itemView.setOnClickListener {
             Toast.makeText(context, profesores[position].codigo, Toast.LENGTH_SHORT).show()

@@ -3,6 +3,7 @@ package com.example.desafio2profesores
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,6 +27,9 @@ class ListadoAulas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_aulas)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
         recyclerView = findViewById<RecyclerView>(R.id.RVListaAulas)
         val linearLayoutManager = LinearLayoutManager(applicationContext)
         recyclerView.layoutManager = linearLayoutManager
@@ -40,6 +44,12 @@ class ListadoAulas : AppCompatActivity() {
             getBuscarUnAula(idBuscar)
         }
 
+    }
+
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmlisaula, fragment)
+        fragmentTransaction.commit()
     }
 
     fun getAulas() {
@@ -92,6 +102,10 @@ class ListadoAulas : AppCompatActivity() {
                 Toast.makeText(this@ListadoAulas, "${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    fun volverAula(view: View){
+        finish()
     }
 
 }

@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.desafio2profesores.Adaptadores.MiAdaptadorRVAulas
 import com.example.desafio2profesores.Api.ServiceBuilder
 import com.example.desafio2profesores.Api.UserAPI
 import com.example.desafio2profesores.Modelo.Aula
@@ -32,6 +32,9 @@ class EdicionOrdenador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edicion_ordenador)
 
+        val fragment = Fragmento()
+        replaceFragment(fragment)
+
         nuevoCodord = findViewById(R.id.edCodordNuevo)
         nuevoCpu = findViewById(R.id.edCpuNuevo)
         nuevoRam = findViewById(R.id.edRamNuevo)
@@ -44,13 +47,77 @@ class EdicionOrdenador : AppCompatActivity() {
         val codBuscar = intent.getStringExtra("codigo").toString()
         if (operacion.equals("modificar")) {
             getBuscarUnOrdenador(codBuscar)
-            nuevoCodord.isEnabled = false  //No dejamos modificar el codord que es la clave del registro.
-
-
+            nuevoCodord.isEnabled =
+                false  //No dejamos modificar el codord que es la clave del registro.
         }
+
+        //var aulas: ArrayList<Aula> = ArrayList()
+        var codigosAula: ArrayList<String> = ArrayList()
+        //Obtener aulas
+
+        val request = ServiceBuilder.buildService(UserAPI::class.java)
+        val call = request.getAulas()
+
+        var check=0
+
+        call.enqueue(object : Callback<MutableList<Aula>> {
+            override fun onResponse(
+                call: Call<MutableList<Aula>>,
+                response: Response<MutableList<Aula>>
+            ) {
+                Log.e("Fernando", response.code().toString())
+                for (post in response.body()!!) {
+                    //aulas.add(Aula(post.codaula, post.nomaula))
+                    codigosAula.add(post.codaula!!)
+                }
+                if (response.isSuccessful){
+
+                    //Spinner con las aulas
+
+                    var miSp: Spinner = findViewById(R.id.spAulas)
+                    val adaptador2 = ArrayAdapter(this@EdicionOrdenador, R.layout.item_spinner, R.id.txtSpinner, codigosAula)
+                    miSp.adapter = adaptador2
+
+                    //check=0
+                    miSp.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
+
+                        override fun onItemSelected(
+                            parent: AdapterView<*>?,
+                            vista: View?,
+                            pos: Int,
+                            idElemento: Long
+                        ) {
+                            if(check != 0){
+                                var aulaSel = codigosAula.get(pos)
+                                nuevoAula.text = aulaSel
+                            }else{
+                                check++
+                            }
+
+                        }
+
+                        override fun onNothingSelected(parent: AdapterView<*>?) {
+
+                        }
+
+                    })
+
+
+                }
+            }
+
+            override fun onFailure(call: Call<MutableList<Aula>>, t: Throwable) {
+                //Toast.makeText(this@ListadoAulas, "${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
 
     }
 
+    private fun replaceFragment(fragment: Fragmento){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frmedord, fragment)
+        fragmentTransaction.commit()
+    }
 
     fun cancelar(view: View){
         finish()
@@ -62,7 +129,7 @@ class EdicionOrdenador : AppCompatActivity() {
             nuevoCpu.text.toString(),
             nuevoRam.text.toString(),
             nuevoAlmacenamiento.text.toString(),
-            nuevoAula.text.toString() //Deberia obtenerse de un listado de codigos de aula
+            nuevoAula.text.toString()
         )
 
 

@@ -4,58 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lila"
     tools:context=".VentanaProfe">
 
     <Button
-        android:id="@+id/btnListarAulasP"
+        android:id="@+id/btnListarProfesoresP11"
+        style="@style/btnProf"
         android:layout_width="134dp"
         android:layout_height="55dp"
-        android:onClick="listarTodosOrdenadores"
-        android:text="Listar Ordenadores"
+        android:onClick="listarTodosProfesores"
+        android:text="@string/listadoprof"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnListarAulasP5"
+        style="@style/btnAula"
         android:layout_width="134dp"
         android:layout_height="55dp"
         android:onClick="listarTodasAulas"
-        android:text="Listar Aulas"
+        android:text="@string/listadoaula"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <Button
-        android:id="@+id/btnListarProfesoresP11"
+        android:id="@+id/btnListarAulasP"
+        style="@style/btnOrd"
         android:layout_width="134dp"
         android:layout_height="55dp"
-        android:onClick="listarTodosProfesores"
-        android:text="Listar Profesores"
+        android:onClick="listarTodosOrdenadores"
+        android:text="@string/listadoord"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <Button
         android:id="@+id/btnLogoutProfe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="logout"
-        android:text="LOGOUT"
+        android:text="@string/logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visualizacion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <FrameLayout
+        android:id="@+id/frmFragmento"
+        android:layout_width="390dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -134,7 +134,6 @@ class MiAdaptadorRecycler(var tareas : ArrayList<Tarea>,var  context: Context, v
 
             itemView.setOnLongClickListener(View.OnLongClickListener {
 
-
                 val dialogo: AlertDialog.Builder = AlertDialog.Builder(context)
                 dialogo.setPositiveButton(R.string.txtEliminar,
                     DialogInterface.OnClickListener { dialog, which ->
@@ -147,8 +146,6 @@ class MiAdaptadorRecycler(var tareas : ArrayList<Tarea>,var  context: Context, v
 
                         miAdaptadorRecycler.tareas.removeAt(pos)
                         miAdaptadorRecycler.notifyDataSetChanged()
-
-
 
                     })
                 dialogo.setNegativeButton(
