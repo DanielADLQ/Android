@@ -4,10 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoEventoSeleccionado">
+    tools:context=".VentanaComentarios">
 
     <TextView
-        android:id="@+id/txtTituloEvento"
+        android:id="@+id/textCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMENTARIOS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/txtTitEvComentarios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -17,46 +29,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.041" />
 
-    <Button
-        android:id="@+id/btnVerFotos"
-        android:layout_width="183dp"
-        android:layout_height="78dp"
-        android:onClick="abrirFotos"
-        android:text="VER FOTOS"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvComentarios"
+        android:layout_width="330dp"
+        android:layout_height="241dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.808" />
 
     <Button
-        android:id="@+id/btnVerComentarios"
-        android:layout_width="183dp"
-        android:layout_height="78dp"
-        android:onClick="abrirComentarios"
-        android:text="VER COMENTARIOS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
-
-    <Button
-        android:id="@+id/btnMarcarUbic"
-        android:layout_width="183dp"
-        android:layout_height="78dp"
-        android:onClick="nuevaUbicacion"
-        android:text="MARCAR UBICACION DESTACADA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
-
-    <Button
-        android:id="@+id/btnVolverInfoEvento"
+        android:id="@+id/btnVolverCom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"
@@ -66,19 +52,32 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <EditText
-        android:id="@+id/txtDescUbic"
-        android:layout_width="337dp"
-        android:layout_height="58dp"
+        android:id="@+id/txtNuevoComentario"
+        android:layout_width="293dp"
+        android:layout_height="57dp"
         android:ems="10"
-        android:hint="Descripcion de la nueva ubicacion..."
-        android:inputType="textPersonName"
+        android:gravity="start|top"
+        android:hint="Escribe un comentario..."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <Button
+        android:id="@+id/btnNuevoComentario"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:onClick="nuevoComentario"
+        android:text="AGREGAR COMENTARIO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.278" />
 </androidx.constraintlayout.widget.ConstraintLayout>

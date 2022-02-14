@@ -31,6 +31,16 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".MapsNuevaUbicacion"
+            android:exported="true"
+            android:label="@string/title_activity_maps_nueva_ubicacion" />
+        <activity
+            android:name=".VentanaFotos"
+            android:exported="true" />
+        <activity
+            android:name=".VentanaComentarios"
+            android:exported="true" />
+        <activity
             android:name=".MapsActivity"
             android:exported="true"
             android:label="@string/title_activity_maps" />

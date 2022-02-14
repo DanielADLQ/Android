@@ -1,6 +1,8 @@
 package com.example.desafiofinal
 
 import Modelo.Asistente
+import Modelo.Comentario
+import Modelo.Ubicacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -48,7 +50,9 @@ class CrearEvento : AppCompatActivity() {
             "hora" to txtHora.text.toString(),
             "latitud" to txtLat.text.toString().toDouble(),
             "longitud" to txtLong.text.toString().toDouble(),
-            "asistentes" to ArrayList<Asistente>()
+            "asistentes" to ArrayList<Asistente>(),
+            "comentarios" to ArrayList<Comentario>(),
+            "ubicaciones" to ArrayList<Ubicacion>()
         )
 
         //Añade el evento nuevo

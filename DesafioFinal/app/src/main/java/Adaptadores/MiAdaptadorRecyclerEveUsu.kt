@@ -135,7 +135,7 @@ class MiAdaptadorRecyclerEveUsu(var eventos : ArrayList<Evento>, var  context: C
 
                     intentV1.putExtra("ev",evento)
                     context.startActivity(intentV1)
-                    //(context as Activity).finish()
+                    (context as Activity).finish()
                 })
 
             itemView.setOnLongClickListener(View.OnLongClickListener {

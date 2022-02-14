@@ -3,7 +3,9 @@ package com.example.desafiofinal
 import Adaptadores.MiAdaptadorRecyclerEve
 import Adaptadores.MiAdaptadorRecyclerEveUsu
 import Modelo.Asistente
+import Modelo.Comentario
 import Modelo.Evento
+import Modelo.Ubicacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -94,9 +96,15 @@ class VentanaUsuario : AppCompatActivity() {
                 var asistentes : ArrayList<Asistente> = ArrayList()
                 var asistent : ArrayList<HashMap<String, Asistente>>
 
+                var comentarios : ArrayList<Comentario> = ArrayList()
+                var coment : ArrayList<HashMap<String, Comentario>>
+
+                var ubicaciones : ArrayList<Ubicacion> = ArrayList()
+                var ubic : ArrayList<HashMap<String, Ubicacion>>
+
                 if (dc.document.get("asistentes") != null){
                     //asistentes = dc.document.get("asistentes") as ArrayList<Asistente>
-                    asistent = dc.document.get("asistentes") as ArrayList<HashMap<String, Asistente>>
+                    asistent = dc.document.get("asistentes") as ArrayList<HashMap<String,Asistente>>
 
                     //Log.e(TAG,asistent[0]["correo"].toString())
 
@@ -108,6 +116,31 @@ class VentanaUsuario : AppCompatActivity() {
                 else {
                     asistentes = arrayListOf()
                 }
+
+                if (dc.document.get("comentarios") != null){
+                    coment = dc.document.get("comentarios") as ArrayList<HashMap<String, Comentario>>
+
+                    for(com in coment){
+                        comentarios.add(Comentario(com["emisor"].toString(),com["mensaje"].toString()))
+                    }
+
+                }
+                else {
+                    comentarios = arrayListOf()
+                }
+
+                if (dc.document.get("ubicaciones") != null){
+                    ubic = dc.document.get("ubicaciones") as ArrayList<HashMap<String, Ubicacion>>
+
+                    for(ub in ubic){
+                        ubicaciones.add(Ubicacion(ub["descripcion"].toString(),ub["latitud"].toString().toDouble(),ub["latitud"].toString().toDouble()))
+                    }
+
+                }
+                else {
+                    comentarios = arrayListOf()
+                }
+
                 var al = Evento(
                     dc.document.get("id").toString(),
                     dc.document.get("nombre").toString(),
@@ -116,7 +149,9 @@ class VentanaUsuario : AppCompatActivity() {
                     dc.document.get("hora").toString(),
                     dc.document.get("latitud").toString().toDouble(),
                     dc.document.get("longitud").toString().toDouble(),
-                    asistentes
+                    asistentes,
+                    comentarios,
+                    ubicaciones
                 )
                 //Log.e(TAG, al.toString())
                 miArray.add(al)
