@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 
 class InfoEventoSeleccionado : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +51,8 @@ class InfoEventoSeleccionado : AppCompatActivity() {
             intentV1.putExtra("desc",txtDescNuevaUbi.text.toString())
             startActivity(intentV1)
             finish()
+        }else{
+            Toast.makeText(this,"Pon un titulo a la ubicacion",Toast.LENGTH_LONG).show()
         }
     }
 

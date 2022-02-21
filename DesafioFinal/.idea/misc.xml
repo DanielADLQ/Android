@@ -12,6 +12,7 @@
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_admin.xml" value="0.25416666666666665" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_comentarios.xml" value="0.13020833333333334" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_entrada_admin.xml" value="0.2" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_fotos.xml" value="0.264" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_gestion_usuarios.xml" value="0.2" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_mod_asist.xml" value="0.128" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/activity_ventana_no_activado.xml" value="0.13125" />
@@ -20,6 +21,7 @@
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclerasistentes.xml" value="0.1" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclercomentarios.xml" value="0.11614583333333334" />
         <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclereventos.xml" value="0.1" />
+        <entry key="..\:/RepositorioAndroid/Android/DesafioFinal/app/src/main/res/layout/recyclerfotos.xml" value="0.14427083333333332" />
       </map>
     </option>
   </component>
