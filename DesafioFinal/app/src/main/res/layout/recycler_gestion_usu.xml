@@ -6,7 +6,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="78dp">
+        android:layout_height="78dp"
+        android:background="@color/lightgreen">
 
         <TextView
             android:id="@+id/txtCorreoUsu"

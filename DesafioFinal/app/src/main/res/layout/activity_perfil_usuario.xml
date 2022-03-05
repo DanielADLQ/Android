@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightgreen"
     tools:context=".PerfilUsuario">
 
     <TextView
         android:id="@+id/textView16"
+        style="@style/titulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PERFIL"
@@ -99,6 +101,7 @@
 
     <Button
         android:id="@+id/btnConfirmar"
+        style="@style/misBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="modificarDatos"
@@ -112,6 +115,7 @@
 
     <Button
         android:id="@+id/btnDejarAdmin"
+        style="@style/misBotones"
         android:layout_width="194dp"
         android:layout_height="82dp"
         android:onClick="dejarAdmin"
@@ -125,6 +129,7 @@
 
     <Button
         android:id="@+id/btnCancelar"
+        style="@style/misBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cancelar"

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightgreen"
     tools:context=".InfoEventoSeleccionado">
 
     <TextView
         android:id="@+id/txtTituloEvento"
+        style="@style/titulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -21,6 +23,7 @@
 
     <Button
         android:id="@+id/btnVerFotos"
+        style="@style/misBotones"
         android:layout_width="183dp"
         android:layout_height="78dp"
         android:onClick="abrirFotos"
@@ -33,6 +36,7 @@
 
     <Button
         android:id="@+id/btnVerComentarios"
+        style="@style/misBotones"
         android:layout_width="183dp"
         android:layout_height="78dp"
         android:onClick="abrirComentarios"
@@ -45,6 +49,7 @@
 
     <Button
         android:id="@+id/btnMarcarUbic"
+        style="@style/misBotones"
         android:layout_width="183dp"
         android:layout_height="78dp"
         android:onClick="nuevaUbicacion"
@@ -57,6 +62,7 @@
 
     <Button
         android:id="@+id/btnVolverInfoEvento"
+        style="@style/misBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"
